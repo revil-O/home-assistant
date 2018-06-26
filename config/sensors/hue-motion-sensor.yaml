@@ -1,0 +1,5 @@
+  - platform: rest
+    resource: http://192.168.2.243/api/X5C6lguxvBkyn8rmWy8uqvGn6WGUnrWKL8x40nQo/sensors/4
+    value_template: '{{ value_json.state.temperature | float / 100 }}'
+    unit_of_measurement: °C
+    name: 'Flur Temperatur'
