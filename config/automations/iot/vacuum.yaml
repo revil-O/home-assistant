@@ -1,0 +1,35 @@
+- alias: Vaccum starts
+  trigger:
+    platform: state
+    entity_id: group.all_devices
+    from: 'home'
+    to: 'not_home'
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        weekday:
+          - mon
+      - condition: time
+        before: '10:00:00'
+  action:
+    - service: vacuum.turn_on
+      entity_id: vacuum.xiaomi_vacuum_cleaner
+    - service: notify.iosgroup
+      data:
+        message: "Hugo startet."
+
+- alias: Vacuum finish
+  trigger:
+    platform: state
+    entity_id: vacuum.xiaomi_vacuum_cleaner
+    from: 'on'
+    to: 'off'
+  condition:
+    condition: state
+    entity_id: group.all_devices
+    state: 'not_home'
+  action:
+    service: notify.iosgroup
+    data:
+      message: "Hugo ist fertig mit saugen."
