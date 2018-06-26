@@ -1,0 +1,4 @@
+  - platform: mqtt
+    state_topic: "weather/outTemp_C"
+    name: weewx.outtemp
+    unit_of_Meaurement: 'C'
