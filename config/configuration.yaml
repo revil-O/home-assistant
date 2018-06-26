@@ -89,16 +89,11 @@ homekit:
     include_domains:
       - light
       - input_boolean
-      - sensor
       - switch
     exclude_domains:
       - script
       - automations
-    exclude_entities:
-      - sensor.heizung_az_christian_temperature
-      - sensor.motion_arbeitszimmer_temperature
-      - sensor.motion_katzenbrunnen_temperature
-      - sensor.flur_temperatur
+      - sensor
 
 ############################################################################
 # Notifications
