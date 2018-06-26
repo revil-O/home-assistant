@@ -70,7 +70,7 @@ vacuum:
 ############################################################################
 
 homekit:
-  auto_start: true
+  auto_start: false
   filter:
     include_domains:
       - light

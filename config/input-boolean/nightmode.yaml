@@ -1,4 +1,4 @@
-nightmode:
-  name: Nachtmodus
-  initial: off
-  icon: mdi:weather-night
+  nightmode:
+    name: Nachtmodus
+    initial: off
+    icon: mdi:weather-night
