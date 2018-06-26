@@ -1,0 +1,23 @@
+- alias: Basement door open
+  trigger:
+    platform: state
+    entity_id: binary_sensor.kellertuer_sensor
+    to: 'on'
+    for:
+      minutes: 5
+  action:
+    service: notify.iosgroup
+    data:
+      message: "Kellertuer ist seit 5 Minuten offen!"
+
+- alias: bathroom door open
+  trigger:
+    platform: state
+    entity_id: binary_sensor.badezimmer_sensor
+    to: 'on'
+    for:
+      minutes: 5
+  action:
+    service: notify.iosgroup
+    data:
+      message: "Badezimmerfenster ist seit 5 Minuten offen!"
