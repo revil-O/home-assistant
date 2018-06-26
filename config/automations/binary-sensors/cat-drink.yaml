@@ -1,0 +1,20 @@
+- alias: Wasserspender an
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_katzenbrunnen_sensor
+    to: 'on'
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.steckdose_katzenbrunnen_switch
+
+- alias: Wasserspender aus
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_katzenbrunnen_sensor
+    to: 'off'
+    for:
+      minutes: 2
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.steckdose_katzenbrunnen_switch
