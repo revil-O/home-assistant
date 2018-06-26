@@ -43,7 +43,7 @@
       - climate.heizung_az_christian_heat
       - climate.heizung_badezimmer_heating_1
 
-  climate:
+  roomclimate:
     name: Raumklima
     entities:
       - sensor.wohnzimmer_relative_humidity
