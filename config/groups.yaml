@@ -1,8 +1,13 @@
-  #default_view:
-  #  view: yes
-  #  icon: mdi:home-assistant
-  #  entities:
-  #    - group.system
+  default_view:
+    view: yes
+    icon: mdi:home-assistant
+    entities:
+      - group.weather
+      - group.lights
+      - group.household
+      - group.switches
+      - group.system
+
   weather:
     name: Wetter & Umwelt
     entities:
@@ -23,6 +28,12 @@
     name: Haushalt
     entities:
       - vacuum.xiaomi_vacuum_cleaner
+
+  switches:
+    Name: Steckdosen
+    entities:
+      - switch.gummibaum
+      - switch.katzenbrunnen
 
   system:
     name: System
