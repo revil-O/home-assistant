@@ -1,0 +1,26 @@
+- alias: Licht Arbeitszimmer
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_arbeitszimmer_sensor
+    to: 'on'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: light.schreibtisch_christian
+        state: 'off'
+      - condition: state
+        entity_id: light.schreibtisch_petra
+        state: 'off'
+      - condition: state
+        entity_id: light.bloom
+        state: 'off'
+      - condition: sun
+        after: sunset
+      - condition: state
+        entity_id: input_boolean.nightmode
+        state: 'off'
+  action:
+    service: homeassistant.turn_on
+    entity_id: script.motion_az_on
