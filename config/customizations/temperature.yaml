@@ -9,11 +9,11 @@
 
  sensor.flur_temperatur:
   icon: mdi:thermometer
-  friendly_name: Flur Temperatur
+  friendly_name: Temperatur Flur
 
  climate.heizung_badezimmer_heating_1:
   icon: mdi:thermometer
-  friendly_name: Badezimmer Heizung
+  friendly_name: Heizung Badezimmer
 
  climate.heizung_az_christian_heat:
   icon: mdi:thermometer
@@ -21,4 +21,4 @@
 
  sensor.wohnzimmer_temperature:
   icon: mdi:thermometer
-  friendly_name: Temperatur
+  friendly_name: Temperatur Wohnzimmer

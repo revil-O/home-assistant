@@ -6,5 +6,5 @@
 
  sensor.wohnzimmer_relative_humidity:
   icon: mdi:water-percent
-  friendly_name: Luftfeuchtigkeit
+  friendly_name: Wohnzimmer Luftfeuchtigkeit
   homebridge_name: Wohnzimmer Luftfeuchtigkeit
