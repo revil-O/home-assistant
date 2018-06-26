@@ -32,8 +32,8 @@
   switches:
     name: Steckdosen
     entities:
-      - switch.gummibaum
-      - switch.katzenbrunnen
+      - switch.steckdose_gummibaum_switch
+      - switch.steckdose_katzenbrunnen_switch
 
   system:
     name: System
