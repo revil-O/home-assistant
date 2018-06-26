@@ -15,6 +15,7 @@
     entities:
       - sensor.nextsunset
       - sensor.nextsunrise
+      - sensor.weewx_outtemp
 
   lights:
     name: Licht
