@@ -1,0 +1,3 @@
+ sensor.weewx_outtemp:
+  friendly_name: Außentemperatur
+  icon: mdi:thermometer
