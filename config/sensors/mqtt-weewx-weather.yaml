@@ -5,7 +5,7 @@
 
   - platform: mqtt
     state_topic: "weather/dewpoint_C"
-    name: weewx_dewpoint
+    name: weewx_drewpoint
     unit_of_measurement: 'C'
 
   - platform: mqtt
