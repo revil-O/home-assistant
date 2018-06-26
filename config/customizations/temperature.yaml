@@ -15,8 +15,6 @@
   icon: mdi:thermometer
   friendly_name: Badezimmer Heizung
 
- sensor.heizung_badezimmer_temperature:
-
  climate.heizung_az_christian_heat:
   icon: mdi:thermometer
   friendly_name: Heizung Christian

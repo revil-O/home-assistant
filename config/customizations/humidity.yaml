@@ -1,0 +1,10 @@
+############################################################################
+#
+# Luftfeuchtigkeit
+#
+############################################################################
+
+ sensor.wohnzimmer_relative_humidity:
+  icon: mdi:water-percent
+  friendly_name: Luftfeuchtigkeit
+  homebridge_name: Wohnzimmer Luftfeuchtigkeit
