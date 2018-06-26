@@ -3,9 +3,11 @@
     icon: mdi:home-assistant
     entities:
       - group.weather
+      - group.roomclimate
       - group.lights
       - group.household
       - group.switches
+      - group.heating
       - group.system
 
   weather:
@@ -34,6 +36,19 @@
     entities:
       - switch.steckdose_gummibaum_switch
       - switch.steckdose_katzenbrunnen_switch
+
+  heating:
+    name: Heizung
+    entities: 
+      - climate.heizung_az_christian_heat
+      - climate.heizung_badezimmer_heating_1
+
+  climate:
+    name: Raumklima
+    entities:
+      - sensor.wohnzimmer_relative_humidity
+      - sensor.wohnzimmer_temperature
+      - sensor.flur_temperatur
 
   system:
     name: System
