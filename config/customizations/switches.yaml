@@ -1,0 +1,13 @@
+############################################################################
+#
+# Steckdosen
+#
+############################################################################
+
+ switch.steckdose_gummibaum_switch:
+  friendly_name: Gummibaum
+  icon: mdi:tree
+
+ switch.steckdose_katzenbrunnen_switch:
+  friendly_name: Katzenbrunnen
+  icon: mdi:cat

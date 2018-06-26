@@ -1,0 +1,22 @@
+############################################################################
+#
+# Tür / Fenster Sensor
+#
+############################################################################
+
+ binary_sensor.kellertuer_sensor:
+  friendly_name: Kellertuer
+  icon: mdi:glassdoor
+  device_class: opening
+  homebridge_hidden: true
+
+ binary_sensor.badezimmer_sensor:
+  friendly_name: Fenster
+  icon: mdi:window-closed
+  device_class: opening
+  homebridge_opening_type: window
+
+ binary_sensor.wohnzimmer_schiebetuer_sensor:
+  friendly_name: Schiebetuer
+  icon: mdi:glassdoor
+  device_class: opening
