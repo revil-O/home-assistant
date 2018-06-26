@@ -1,4 +1,19 @@
   - platform: mqtt
     state_topic: "weather/outTemp_C"
     name: weewx_outtemp
-    unit_of_Meaurement: 'C'
+    unit_of_measurement: 'C'
+
+  - platform: mqtt
+    state_topic: "weather/dewpoint_C"
+    name: weewx_dewpoint
+    unit_of_measurement: 'C'
+
+  - platform: mqtt
+    state_topic: "weather/windSpeed_kph"
+    name: weewx_wind
+    unit_of_measurement: 'kmh'
+
+  - platform: mqtt
+    state_topic: "weather/rain_cm"
+    name: weewx_rain
+    unit_of_measurement: 'mm'

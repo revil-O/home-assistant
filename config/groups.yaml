@@ -16,6 +16,9 @@
       - sensor.nextsunset
       - sensor.nextsunrise
       - sensor.weewx_outtemp
+      - sensor.weewx_drewpoint
+      - sensor.weewx_wind
+      - sensor.weewx_rain
 
   lights:
     name: Licht

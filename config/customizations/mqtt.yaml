@@ -1,3 +1,15 @@
  sensor.weewx_outtemp:
   friendly_name: Außentemperatur
   icon: mdi:thermometer
+
+ sensor.weewx_drewpoint:
+  friendly_name: Taupunkt
+  icon: mdi:water-percent
+
+ sensor.weewx_wind:
+  friendly_name: Windgeschwindigkeit
+  icon: mdi:weather-windy
+
+ sensor.weewx_rain:
+  friendly_name: Regen
+  icon: mdi:weather-rainy
