@@ -1,0 +1,11 @@
+- name: Abendbeleuchtung
+  entities:
+    light.couch:
+      state: on
+      rgb_color: [ 255, 255, 255]
+      brightness: 100
+    light.decke: off
+    light.bodenlampe:
+      state: on
+      rgb_color: [ 255, 255, 255]
+      brightness: 100

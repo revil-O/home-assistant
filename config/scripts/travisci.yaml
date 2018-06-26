@@ -1,0 +1,9 @@
+  restart_hass:
+    alias: Restart Home Assistant
+    sequence:
+      - service: shell_command.restart_hass
+
+  git_pull:
+    alias: git pull
+    sequence:
+      - service: shell_command.git_pull

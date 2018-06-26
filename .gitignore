@@ -1,0 +1,28 @@
+# Systemfiles
+.ssh/
+.viminfo
+.vimrc
+.bash_history
+.oh-my-zsh
+.vim/.netrwhist
+.zcompdump-home-assistant-5.3.1
+.zsh_history
+.zshrc
+.bashrc
+.profile
+.cache
+.mysql_history
+
+# Non Home-Assistant
+git-update.sh
+git-pull.sh
+
+# Home Assistant
+.homeassistant
+config/secrets.yaml
+config/known_devices.yaml
+config/debs
+config/tts
+config/home-assistant_v2.db
+config/home-assistant.log
+config/.*

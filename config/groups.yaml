@@ -1,0 +1,32 @@
+  #default_view:
+  #  view: yes
+  #  icon: mdi:home-assistant
+  #  entities:
+  #    - group.system
+  weather:
+    name: Wetter & Umwelt
+    entities:
+      - sensor.nextsunset
+      - sensor.nextsunrise
+
+  lights:
+    name: Licht
+    entities:
+      - light.bloom
+      - light.bodenlampe
+      - light.couch
+      - light.decke
+      - light.schreibtisch_christian
+      - light.schreibtisch_petra
+
+  household:
+    name: Haushalt
+    entities:
+      - vacuum.xiaomi_vacuum_cleaner
+
+  system:
+    name: System
+    entities:
+      - script.restart_hass
+      - script.git_pull
+      - sensor.cbirkenbeulhomeassistant_last_build_state

@@ -1,0 +1,20 @@
+- alias: Beleuchtung bei Sonnenuntergang
+  trigger:
+    platform: sun
+    event: sunset
+  condition:
+    condition: state
+    entity_id: group.all_devices
+    state: 'home'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.Abendbeleuchtung
+
+- alias: Beleuchtung bei Sonnenuntergang per Input Boolean
+  trigger:
+    platform: 'state'
+    entity_id: input_boolean.evening_lightning_default
+    to: 'on'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.Abendbeleuchtung

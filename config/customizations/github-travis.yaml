@@ -1,0 +1,11 @@
+ sensor.cbirkenbeulhomeassistant_last_build_state:
+   friendly_name: Travis CI Build
+   icon: mdi:github-face
+
+ script.git_pull:
+   friendly_name: Pull from Github
+   icon: mdi:github-face
+
+ script.restart_hass:
+   friendly_name: Neustart Home Assistant
+   icon: mdi:home-assistant

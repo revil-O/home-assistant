@@ -1,0 +1,25 @@
+- alias: turn on nightmode
+  trigger:
+    - platform: time
+      at: '01:00:00'
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.nightmode
+
+- alias: turn off nightmode
+  trigger:
+    - platform: sun
+      event: sunrise
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.nightmode
+
+- alias: turn off lights
+  trigger:
+    - platform: state
+      entity_id: input_boolean.nightmode
+  action:
+    - service: light.turn_off
+      entity_id: group.all_lights

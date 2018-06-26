@@ -1,0 +1,3 @@
+evening_lightning_default:
+  name: Abendbeleuchtung
+  initial: off

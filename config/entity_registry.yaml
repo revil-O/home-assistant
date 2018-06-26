@@ -1,0 +1,50 @@
+light.medizinschrank:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:80:17-0b
+light.schreibtisch_christian:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:2f:41:29-0b
+light.schreibtisch_petra:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:2c:db:f8-0b
+light.couch:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f7:dc:64-0b
+light.kellertreppe:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:2b:65:f3-0b
+light.bloom:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:01:24:1a:c5-0b
+light.decke:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f6:f2:bd-0b
+light.bad:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:aa:6b-0b
+light.kellervorraum:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:2b:54:51-0b
+light.bodenlampe:
+  config_entry_id: 86519114b0d04c54a48d38ff0fd7b9d4
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:f7:e7:f9-0b

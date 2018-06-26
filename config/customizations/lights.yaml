@@ -1,0 +1,17 @@
+ light.bloom:
+  icon: mdi:spotlight-beam
+
+ light.decke:
+  icon: mdi:ceiling-light
+
+ light.couch:
+  icon: mdi:spotlight-beam
+
+ light.bodenlampe:
+  icon: mdi:lamp
+
+ light.schreibtisch_christian:
+  icon: mdi:ceiling-light
+
+ light.schreibtisch_petra:
+  icon: mdi:ceiling-light
