@@ -30,7 +30,7 @@
       - vacuum.xiaomi_vacuum_cleaner
 
   switches:
-    Name: Steckdosen
+    name: Steckdosen
     entities:
       - switch.gummibaum
       - switch.katzenbrunnen
