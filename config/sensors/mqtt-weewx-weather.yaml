@@ -1,12 +1,12 @@
   - platform: mqtt
     state_topic: "weather/outTemp_C"
     name: weewx_outtemp
-    unit_of_measurement: 'C'
+    unit_of_measurement: 'Celsius'
 
   - platform: mqtt
     state_topic: "weather/dewpoint_C"
     name: weewx_drewpoint
-    unit_of_measurement: 'C'
+    unit_of_measurement: 'Celsius'
 
   - platform: mqtt
     state_topic: "weather/windSpeed_kph"
