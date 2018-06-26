@@ -89,9 +89,10 @@ homekit:
     include_domains:
       - light
       - input_boolean
+      - sensor
+      - switch
     exclude_domains:
       - script
-      - sensor
       - automations
 
 ############################################################################
