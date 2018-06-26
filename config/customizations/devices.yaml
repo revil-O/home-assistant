@@ -1,0 +1,7 @@
+ device_tracker.petrasiphone6:
+  friendly_name: Petra
+  icon: /local/petra.jpg
+
+ device_tracker.teqqphone:
+  friendly_name: Christian
+  icon: /local/christian.jpg
