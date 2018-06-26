@@ -1,0 +1,44 @@
+- alias: Heizung WT Petra daheim
+  trigger:
+    - platform: time
+      at: '08:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - wed
+        - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_az_christian_heat
+      data:
+        temperature: 23
+
+- alias: Heizung WE
+  trigger:
+    - platform: time
+      at: '09:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - sat
+        - sun
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_az_christian_heat
+      data:
+        temperature: 23
+
+- alias: Heizung WT Petra Arbeit
+  trigger:
+    - platform: time
+      at: '16:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_az_christian_heat
+      data:
+        temperature: 23

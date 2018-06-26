@@ -1,0 +1,87 @@
+- alias: Heizung aus bei offenem Fenster
+  trigger:
+    platform: state
+    entity_id: binary_sensor.badezimmer_sensor
+    to: 'on'
+  action:
+    service: climate.set_temperature
+    entity_id: climate.heizung_badezimmer_heating_1
+    data:
+      temperature: 18
+
+- alias: Heizung an bei geschlossenem Fenster
+  trigger:
+    platform: state
+    entity_id: binary_sensor.badezimmer_sensor
+    to: 'off'
+  action:
+    service: climate.set_temperature
+    entity_id: climate.heizung_badezimmer_heating_1
+    data:
+      temperature: 21
+
+- alias: Heizung am Wochentag ein
+  trigger:
+    - platform: time
+      at: '06:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_badezimmer_heating_1
+      data:
+        temperature: 25
+
+- alias: Heizung am Wochentag aus
+  trigger:
+    - platform: time
+      at: '09:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_badezimmer_heating_1
+      data:
+        temperature: 21
+
+- alias: Heizung am Wochenende ein
+  trigger:
+    - platform: time
+      at: '09:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - sat
+        - sun
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_badezimmer_heating_1
+      data:
+        temperature: 25
+
+- alias: Heizung am Wochenende aus
+  trigger:
+    - platform: time
+      at: '12:30:00'
+  condition:
+    - condition: time
+      weekday:
+        - sat
+        - sun
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.heizung_badezimmer_heating_1
+      data:
+        temperature: 21
