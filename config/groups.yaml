@@ -29,6 +29,8 @@
   household:
     name: Haushalt
     entities:
+      - device_tracker.petrasiphone6
+      - device_tracker.teqqphone
       - vacuum.xiaomi_vacuum_cleaner
 
   switches:

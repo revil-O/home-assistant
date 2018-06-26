@@ -65,6 +65,17 @@ vacuum:
     host: 192.168.2.247
     token: !secret xmi_token
 
+device_tracker:
+  - platform: unifi
+    host: !secret unifi_host
+    port: !secret unifi_port
+    username: !secret unifi_user
+    password: !secret unifi_password
+    verify_ssl: False
+    new_device_defaults:
+      track_new_devices: false
+      hide_if_away: false
+
 ############################################################################
 # HomeKit
 ############################################################################
