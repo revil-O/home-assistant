@@ -1,3 +1,7 @@
+  evening_lightning_default:
+    name: Abendbeleuchtung
+    initial: off
+
   nightmode:
     name: Nachtmodus
     initial: off
