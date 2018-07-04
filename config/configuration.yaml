@@ -149,7 +149,7 @@ alert:
     entity_id: binary_sensor.badezimmer_sensor
     state: 'on'
     repeat: 5
-    can_acknowlege: True
+    can_acknowledge: True
     skip_first: True
     notifiers:
       - iosgroup
