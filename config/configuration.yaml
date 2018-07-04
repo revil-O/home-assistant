@@ -18,7 +18,6 @@ sun:
 ############################################################################
 
 automation: !include_dir_merge_list automations/
-alert: !include_dir_merge_list alerts/
 #input_select: !include_dir_merge_named input_select/
 #input_number: !include_dir_merge_named input_number/
 input_boolean: !include  input-boolean.yaml
@@ -138,3 +137,19 @@ notify:
 shell_command:
   restart_hass: 'systemctl restart home-assistant'
   git_pull: 'bash /root/git-pull.sh'
+
+############################################################################
+# Alerts
+############################################################################
+
+alert:
+  bathroom_window:
+    name: Badezimmerfenster offen
+    done_message: Badezimmerfenster geschlossen
+    entity_id: binary_sensor.badezimmer_sensor
+    state: 'on'
+    repeat: 5
+    can_acknowlege: True
+    skip_first: True
+    notifiers:
+      - iosgroup
