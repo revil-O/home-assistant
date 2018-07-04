@@ -80,6 +80,25 @@ device_tracker:
       hide_if_away: false
 
 ############################################################################
+# MediaPlayer
+############################################################################
+
+media_player:
+  - platform: plex
+    entity_namespace: 'plex'
+
+sonos:
+  media_player:
+    hosts: 192.168.2.244
+
+apple_tv:
+  host: 192.168.2.245
+  login_id: 00000000-0a42-b2cc-516d-7747d33442b0
+  name: ATV_Wohnzimmer
+  start_off: true
+  credentials: 0702CD162BF7D9A6:7467E58FEFF280F86EA1F9D85BC9CA50EAED7B6865033971D91BFF34C6F461E1
+
+############################################################################
 # HomeKit
 ############################################################################
 
