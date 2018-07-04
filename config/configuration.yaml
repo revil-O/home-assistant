@@ -79,6 +79,9 @@ device_tracker:
       track_new_devices: false
       hide_if_away: false
 
+climate:
+  - platform: zwave
+
 ############################################################################
 # MediaPlayer
 ############################################################################
