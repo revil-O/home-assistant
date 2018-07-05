@@ -153,3 +153,15 @@ alert:
     skip_first: True
     notifiers:
       - iosgroup
+
+alert:
+  bathroom_window:
+    name: Kellterür offen
+    done_message: Kellertür geschlossen
+    entity_id: binary_sensor.kellertuer_sensor
+    state: 'on'
+    repeat: 5
+    can_acknowledge: True
+    skip_first: True
+    notifiers:
+      - iosgroup
