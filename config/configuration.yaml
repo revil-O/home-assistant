@@ -112,6 +112,7 @@ homekit:
       - light
       - input_boolean
       - switch
+      - climate
     exclude_domains:
       - script
       - automations
