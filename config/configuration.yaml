@@ -154,7 +154,6 @@ alert:
     notifiers:
       - iosgroup
 
-alert:
   bathroom_window:
     name: Kellterür offen
     done_message: Kellertür geschlossen
