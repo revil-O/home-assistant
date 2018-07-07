@@ -118,6 +118,21 @@ homekit:
       - sensor
 
 ############################################################################
+# Google Assistant
+############################################################################
+
+google_assistant:
+  project_id: tektoria-hass
+  client_id: !secret ga_clientid
+  access_token: !secret ga_accesstoken
+  agent_user_id: !secret ga_agentuserid
+  api_key: !secret ga_apikey
+  exposed_domains:
+    - switch
+    - light
+    - scene
+
+############################################################################
 # Notifications
 ############################################################################
 
