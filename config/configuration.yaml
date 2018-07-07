@@ -131,6 +131,7 @@ google_assistant:
     - switch
     - light
     - scene
+    - input_boolean
   entity_config:
     scene.Abendbeleuchtung:
       room: Wohnzimmer
@@ -140,6 +141,29 @@ google_assistant:
       room: Arbeitszimmer
     light.Bodenlampe:
       room: Wohnzimmer
+    light.couch:
+      room: Wohnzimmer
+    light.Decke:
+      room: Wohnzimmer
+    switch.Gummibaum:
+      room: Wohnzimmer
+    switch.Katzenbrunnen:
+      room: Wohnzimmer
+    light.Kellertreppe:
+      expose: False
+    light.Kellervorraum:
+      expose: false
+    light.Medizinschrank:
+      expose: False
+    light.Schreibtisch_Christian:
+      room: Arbeitszimmer
+    light.Schreibtisch_Petra:
+      room: Arbeitszimmer
+    input_boolean.evening_lightning_default:
+      expose: False
+    input_boolean.nightmode:
+      name: Gute Nacht
+
   
 
 ############################################################################
