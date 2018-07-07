@@ -145,14 +145,14 @@ google_assistant:
       room: Wohnzimmer
     light.Decke:
       room: Wohnzimmer
-    switch.Gummibaum:
+    switch.steckdose_gummibaum_switch:
       room: Wohnzimmer
-    switch.Katzenbrunnen:
+    switch.steckdose_katzenbrunnen_switch:
       room: Wohnzimmer
     light.Kellertreppe:
       expose: False
     light.Kellervorraum:
-      expose: false
+      expose: False
     light.Medizinschrank:
       expose: False
     light.Schreibtisch_Christian:

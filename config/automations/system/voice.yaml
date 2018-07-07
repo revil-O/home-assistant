@@ -1,0 +1,7 @@
+  - alias: 'Resync Voice controll'
+    trigger:
+      - platform: event
+        event_type: zwave.network_ready
+    action:
+      - service: homekit.start
+      - service: google_assistant.request_sync
