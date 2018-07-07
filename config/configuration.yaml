@@ -131,6 +131,16 @@ google_assistant:
     - switch
     - light
     - scene
+  entity_config:
+    scene.Abendbeleuchtung:
+      room: Wohnzimmer
+    light.bad:
+      expose: False
+    light.Bloom:
+      room: Arbeitszimmer
+    light.Bodenlampe:
+      room: Wohnzimmer
+  
 
 ############################################################################
 # Notifications
