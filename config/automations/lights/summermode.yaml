@@ -1,6 +1,6 @@
 - alias: Summer mode automation condition
   trigger:
-    platform: state
+    platform: numeric_state
     entity_id: sensor.weewx_outtemp
     above: 27
     for: 
