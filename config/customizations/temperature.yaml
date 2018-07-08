@@ -6,6 +6,7 @@
 
  sensor.motion_arbeitszimmer_temperature:
   icon: mdi:thermometer
+  friendly_name: Temperatur Arbeitszimmer
 
  sensor.flur_temperatur:
   icon: mdi:thermometer
