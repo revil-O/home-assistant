@@ -21,6 +21,9 @@
       - condition: state
         entity_id: input_boolean.nightmode
         state: 'off'
+      - condition: state
+        entity_id: input_boolean.summermode
+        state: 'off'
   action:
     service: homeassistant.turn_on
     entity_id: script.motion_az_on

@@ -6,3 +6,8 @@
     name: Nachtmodus
     initial: off
     icon: mdi:weather-night
+
+  summermode:
+    name: Sommerzeit
+    initial: off
+    icon: mdi:weather-sunny

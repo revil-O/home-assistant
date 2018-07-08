@@ -1,0 +1,11 @@
+- alias: Summer mode automation condition
+  trigger:
+    platform: state
+    entity_id: sensor.weewx_outtemp
+    above: 27
+    for: 
+      hours: 2
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.summermode

@@ -1,0 +1,8 @@
+- name: Sommerbeleuchtung
+  entities:
+    light.couch: off
+    light.decke: off
+    light.bodenlampe:
+      state: on
+      rgb_color: [ 0, 255, 0]
+      brightness: 100

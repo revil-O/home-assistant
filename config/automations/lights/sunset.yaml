@@ -1,20 +1,36 @@
-- alias: Beleuchtung bei Sonnenuntergang
+- alias: Beleuchtung bei Sonnenuntergang normal
   trigger:
     platform: sun
     event: sunset
   condition:
-    condition: state
-    entity_id: group.all_devices
-    state: 'home'
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: group.all_devices
+        state: 'home'
+      - condition: state
+        entity_id: input_boolean.summermode
+        state: 'off'
   action:
     - service: scene.turn_on
       entity_id: scene.Abendbeleuchtung
 
-- alias: Beleuchtung bei Sonnenuntergang per Input Boolean
+- alias: Beleuchtung bei Sonnenuntergang Sommermodus
   trigger:
-    platform: 'state'
-    entity_id: input_boolean.evening_lightning_default
-    to: 'on'
+    platform: sun
+    event: sunset
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: group.all_devices
+        state: 'home'
+      - condition: state
+        entity_id: input_boolean.summermode
+        state: 'on'
+      - condition: state
+        entity_id: binary_sensor.wohnzimmer_schiebetuer_sensor
+        state: 'on'
   action:
     - service: scene.turn_on
-      entity_id: scene.Abendbeleuchtung
+      entity_id: scene.Sommerbeleuchtung
