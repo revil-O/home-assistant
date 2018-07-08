@@ -26,6 +26,10 @@ history_graph:
     entities:
       - sensor.weewx_outtemp
       
+logbook:
+  include:
+    domains:
+      - input_boolean
 
 ############################################################################
 # Configuration Splitting
@@ -177,8 +181,6 @@ google_assistant:
       expose: False
     input_boolean.nightmode:
       name: Gute Nacht
-
-  
 
 ############################################################################
 # Notifications
