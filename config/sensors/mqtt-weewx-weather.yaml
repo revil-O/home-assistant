@@ -7,11 +7,13 @@
   - platform: mqtt
     state_topic: "weather/dewpoint_C"
     name: weewx_drewpoint
+    value_template: '{{ value | round(1) }}'
     unit_of_measurement: °C
 
   - platform: mqtt
     state_topic: "weather/windSpeed_kph"
     name: weewx_wind
+    value_template: '{{ value | round(1) }}'
     unit_of_measurement: 'kmh'
 
   - platform: mqtt
