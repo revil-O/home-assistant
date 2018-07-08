@@ -13,6 +13,17 @@ homeassistant:
 
 sun:
 
+history:
+  include:
+    domains:
+      - sensor
+
+history_graph:
+  temperature:
+    entities:
+      - sensor.weewx_outtemp
+      
+
 ############################################################################
 # Configuration Splitting
 ############################################################################
