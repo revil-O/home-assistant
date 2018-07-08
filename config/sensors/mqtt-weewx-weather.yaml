@@ -1,6 +1,8 @@
   - platform: mqtt
     state_topic: "weather/outTemp_C"
     name: weewx_outtemp
+    value_template: '{{ value_json.outtemp | round(1) }}'
+    unit_of_measurement: °C
 
   - platform: mqtt
     state_topic: "weather/dewpoint_C"
