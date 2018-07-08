@@ -15,8 +15,11 @@ sun:
 
 history:
   include:
-    domains:
-      - sensor
+    entities:
+      - sensor.flur_temperatur
+      - sensor.motion_arbeitszimmer_temperature
+      - sensor.wohnzimmer_temperature
+      - sensor.weewx_outtemp
 
 history_graph:
   temperature:
