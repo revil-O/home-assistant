@@ -86,10 +86,6 @@ climate:
 # MediaPlayer
 ############################################################################
 
-media_player:
-  - platform: plex
-    entity_namespace: 'plex'
-
 sonos:
   media_player:
     hosts: 192.168.2.244
