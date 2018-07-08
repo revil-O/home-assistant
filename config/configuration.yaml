@@ -200,7 +200,7 @@ alert:
     notifiers:
       - iosgroup
 
-  bathroom_window:
+  basemend_door:
     name: Kellterür offen
     done_message: Kellertür geschlossen
     entity_id: binary_sensor.kellertuer_sensor
