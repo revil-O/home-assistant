@@ -8,6 +8,7 @@
       - group.household
       - group.switches
       - group.heating
+      - group.media
       - group.system
 
   weather:
@@ -56,6 +57,11 @@
       - sensor.wohnzimmer_temperature
       - sensor.flur_temperatur
 
+  media:
+    name: Mediaplayer
+    entities:
+      -  media_player.atv_wohnzimmer
+      
   system:
     name: System
     entities:
