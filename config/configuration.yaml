@@ -127,6 +127,9 @@ homekit:
       - script
       - automations
       - sensor
+    exclude_entities:
+      - climate.heizung_az_christian_heat_eco
+      - climate.heizung_az_christian_furnace
 
 ############################################################################
 # Google Assistant
